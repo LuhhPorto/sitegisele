@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;   
+} /** zerando o css  **/ 
+/**  estilo do background  **/
+body {
+    background: #FF7FFA;
+    background: linear-gradient(90deg, rgba(255, 127, 250, 1) 0%, rgba(19, 77, 199, 0.93) 100%);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+.container {
+    max-width: 1440px;
+    min-width: 374px;
+    margin: 0 auto;
+
+}
+/**  estilo do menu  **/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 2%;
+}
+.nav-content {
+    display: flex;
+    gap: 20px;
+    
+}
+.nav-content a {
+    color: black;
+    font-size: 20px;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icons a {
+    color: black;
+}
+
+.icons a:hover {
+    animation: translateY 0.8s infinite alternate;
+    color: white;
+    
+}
+
+.nav-content a:hover {
+    animation: translateY 0.8s infinite alternate;
+    color: white;
+    
+}
+
+@keyframes translateY {
+    from{
+        transform: translateY(0) scale(1);
+    }
+    to {
+        transform: translateY(-8px) scale(1.1);
+    }
+}
+
+@media screen and (max-width:768px) { 
+    header{
+        flex-direction: column;
+        gap: 15px;
+        padding: 0;
+    }
+
+    .nav-content{
+        display: none;
+    }
+    
+}
+/**  estilo do menu  **/
+/**  estilo do home **/
+.home-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.home-content div {
+    flex: 1;
+}
+.home-img img {
+    width: 100%;
+    
+}
+.home-escrita {
+    text-align: center;
+    padding-left: 30px;
+
+}
+
+.home-escrita h1{
+    text-align: center;
+    font-size: 70px;
+}
+.home-escrita h2 {
+    text-align: center;
+}
+.home-escrita p{
+    text-align: left;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+@media screen and (max-width:768px) { 
+    .home-content{
+        flex-direction: column-reverse;
+        gap: 20px;
+        width: 90%;
+    }
+
+    .home-escrita h1 {
+        font-size: 45px;
+    }
+    .home-escrita h2 {
+        font-size: 20px;
+    }
+    .home-escrita p {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+/**  estilo do home **/
+/**  estilo do serviços **/
+.service-content p {
+    background-color: white;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+    margin-top: -5px;
+    font-size: 20px;
+    box-shadow: 0px -1px 17px -4px white;
+}
+.service-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 0px 25px 34px 25px;
+}
+.service-img {
+    max-width: 500px;
+    height: 300px;
+    flex: 1;
+}
+    
+.service-img img {
+    width: 100%;
+    max-height: 260px;
+}
+
+.service-tittle{
+    font-size: 20px;
+}
+
+
+
+@media screen and (max-width:768px) { 
+    .service-content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    img {
+        max-width: 447px;
+    }
+}
+/**  estilo do serviços **/
+/**  estilo do sobre **/
+.sobre-tittle {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px ;
+}
+.sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.sobre div{
+    flex: 1;
+}
+.sobre-img {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.sobre-img img {
+    width: 100%;
+    max-width: 450px;
+}
+
+.sobre-texto{
+    font-size: 17px;
+}
+
+@media screen and (max-width:768px) { 
+    .sobre{
+        flex-direction: column-reverse;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .sobre-texto{
+        text-align: center;
+    }
+}
+/**  estilo do sobre **/
+/**  estilo do contato  **/
+.contato-tittle{
+    text-align: center;
+    font-size: 30px;
+    margin: 15px 0px 15px 0px;
+}
+
+.contato-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+.contato-btn {
+    border: 1px solid black;
+    padding: 8px 24px;
+    border-radius: 4px;
+    color: black;
+    background-color: transparent;
+    transition: 0.8s;
+}
+
+.contato-btn:hover {
+    border: 1px solid white;
+    background-color: white;
+}
+
+.final {
+    margin: 10px 0px 10px 0px;
+}
+
+@media screen and (max-width:768px) { 
+    .final{
+        font-size: 10px;
+    }
+}
+/**  estilo do contato  **/
+
+
+
+
